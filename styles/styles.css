@@ -3,9 +3,118 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background-color: lightgray;
+html {
+    font-size: 62.5%;
 }
+body {
+    background-color: #f4f6fa;
+}
+
+article {
+    padding-block: 3.2rem;
+    padding-inline: 2.4rem;
+}
+
+
+
+
+
+header {
+    margin-block-end: 4rem;
+}
+
+header h1 {
+    margin-block-start: 3.2rem;
+    font-size: 4rem;
+}
+
+header p {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+
+
+
+
+.subjects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.subjects__button {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 1.6rem;
+    width: 100%;
+    border: none;
+    border-radius: .75rem;
+    background-color: white;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.subjects__button:hover {
+    border: 2px solid #a729f5;
+}
+
+.subjects__button div {
+    width: 40px;
+    height: 40px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.subjects__button img {
+    width: 100%;
+    display: block;
+}
+
+.html__icon {
+    background-color: #fff5ed;
+}
+.css__icon {
+    background-color: #e0fdef;
+}
+.javascript__icon {
+    background-color: #ebf0ff;
+}
+.accessibility__icon {
+    background-color: #f6e7ff;
+}
+
+
+.toggle {
+    display: flex;
+    padding-block: 1.6rem;
+}
+
+.toggle__container {
+    display: flex;
+    margin-inline-start: auto;
+    gap: 0.8rem;
+}
+
+.toggle__element {
+    background-color: #a729f5;
+    border-radius: 2rem;
+    padding: 0.4rem;
+    width: 4rem;
+}
+
+.toggle__control {
+    background-color: white;
+    border-radius: 50%;
+    width: 50%;
+    height: 100%;
+}
+
+
+
+
+
 label {
     display: flex;
     align-items: center;
@@ -26,7 +135,7 @@ input[type="radio"] {
     display: none;
 }
 
-div {
+.question__container div {
     background-color: lightgray;
     padding: 1rem;
     border-radius: 0.5rem;

@@ -10,93 +10,117 @@
   <title>Frontend Mentor | Frontend quiz app</title>
 </head>
 <body>
+  <main>
+    <article>
+      <header>
+        <div class="toggle">
+          <div class="toggle__container">
+            <img src="./assets/images/icon-sun-dark.svg" alt="Light mode icon">
+            <div class="toggle__element">
+              <div class="toggle__control"></div>
+            </div>
+            <img src="./assets/images/icon-moon-dark.svg" alt="Dark mode icon">
+          </div>
+        </div>
+        <h1>Welcome to the Frontend Quiz</h1>
+        <p>Pick a subject and get started</p>
+      </header>
 
-  <!-- Quiz menu start -->
+      <div class="subjects">
 
-  Welcome to the Frontend Quiz!
-  Pick a subject to get started.
+        <div class="subjects__choice html__option">
+          <button class="subjects__button" id="html" value="html">
+            <div class="html__icon">
+              <img src="./assets/images/icon-html.svg" alt="HTML Icon">
+            </div>
+            <p>HTML</p>
+          </button>
+        </div>
 
-  HTML
-  CSS
-  JavaScript
-  Accessibility
+        <div class="subjects__choice css__option">
+          <button class="subjects__button" id="css" value="css">
+            <div class="css__icon">
+              <img src="./assets/images/icon-css.svg" alt="CSS Icon">
+            </div>
+            <p>CSS</p>
+          </button>
+        </div>
 
-  <!-- Quiz menu end -->
+        <div class="subjects__choice javascript__option">
+          <button class="subjects__button" id="javascript" value="javascript">
+            <div class="javascript__icon">
+              <img src="./assets/images/icon-js.svg" alt="Javascript Icon">
+            </div>
+            <p>JavaScript</p>
+          </button>
+        </div>
 
-  <!-- Quiz question start -->
+        <div class="subjects__choice accessibility__option">
+          <button class="subjects__button" id="accessibility" value="accessibility">
+            <div class="accessibility__icon">
+              <img src="./assets/images/icon-accessibility.svg" alt="Accessibility Icon">
+            </div>
+            <p>Accessibility</p>
+          </button>
+        </div>
 
-  Question <!-- number --> of 10
+      </div>
+    </article>
+      <!-- <div class="question__container">
+        <div class="question__number">
+          <p>Question 6 of 10</p>
+        </div>
+        <div class="question__display">
+        <p>
+          Which of theese color contrast ratios defines the minimum
+          wcag 2.1 level aa requirement for normal text?
+        </p>
+        </div>
 
-  A
-  B
-  C
-  D
+        <div class="question__progress">
+          <div class="progress__bar"></div>
+        </div>
+         </div>
+       
+         <label>
+          <div>
+            <p>A</p>
+          </div>
+          <p class="answer__choices">4.5:1</p>
+         </label>
+         <input type="radio" name="" id="">
+       
+          <label>
+          <div>
+            <p>B</p>
+          </div>
+           <p class="answer__choices">4.5:1</p>
+         </label>
+         <input type="radio" name="" id="">
+       
+          <label>
+           <div>
+        <p>C</p>
+           </div>
+           <p class="answer__choices">4.5:1</p>
+         </label>
+         <input type="radio" name="" id="">
+       
+          <label>
+           <div>
+        <p>D</p>
+           </div>
+           <p class="answer__choices">4.5:1</p>
+         </label>
+         <input type="radio" name="" id=""> -->
+  </main>
 
-  Submit answer
+  
+  
+  
+  
 
-  <!-- Quiz question end -->
-
-  <!-- Quiz completed start -->
-
-  Quiz completed
-  You scored...
-
-  <!-- score --> out of 10
-
-  <!-- Quiz completed end -->
-     <div class="question__container">
-    <div class="question__number">
-      <p>Question 6 of 10</p>
-    </div>
-    <div class="question__display">
-      <p>
-        Which of theese color contrast ratios defines the minimum
-        wcag 2.1 level aa requirement for normal text?
-      </p>
-    </div>
-    <div class="question__progress">
-      <div class="progress__bar"></div>
-    </div>
-  </div>
-
-  <label>
-    <div>
-      <p>A</p>
-    </div>
-    <p class="answer__choices">4.5:1</p>
-  </label>
-  <input type="radio" name="" id="">
-
-   <label>
-    <div>
-      <p>B</p>
-    </div>
-    <p class="answer__choices">4.5:1</p>
-  </label>
-  <input type="radio" name="" id="">
-
-   <label>
-    <div>
-      <p>C</p>
-    </div>
-    <p class="answer__choices">4.5:1</p>
-  </label>
-  <input type="radio" name="" id="">
-
-   <label>
-    <div>
-      <p>D</p>
-    </div>
-    <p class="answer__choices">4.5:1</p>
-  </label>
-  <input type="radio" name="" id="">
-
-  <button id="html" value="html">HTML</button>
-  <button id="css" value="css">CSS</button>
-  <button id="javascript" value="javascript">JavaScript</button>
-  <button id="accessibility" value="accessibility">Accessibility</button>
-
-  <script src="./scripts/renderQuiz.js"></script>
-  <script src="./scripts/fetchQuiz.js"></script>
+  <!-- <script src="./scripts/renderQuiz.js"></script>
+  <script src="./scripts/fetchQuiz.js"></script> -->
 </body>
 </html>
