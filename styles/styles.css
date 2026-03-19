@@ -49,7 +49,6 @@ header p {
     gap: 1.6rem;
     padding: 1.6rem;
     width: 100%;
-    border: none;
     border-radius: .75rem;
     background-color: white;
     cursor: pointer;
@@ -57,7 +56,7 @@ header p {
 }
 
 .subjects__button:hover {
-    border: 2px solid #a729f5;
+    border-color: #a729f5;
 }
 
 .subjects__button div {
