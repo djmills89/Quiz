@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/styles.css">
   
   <title>Frontend Mentor | Frontend quiz app</title>
@@ -22,8 +25,21 @@
             <img src="./assets/images/icon-moon-dark.svg" alt="Dark mode icon">
           </div>
         </div>
-        <h1>Welcome to the Frontend Quiz</h1>
-        <p>Pick a subject and get started</p>
+        <div class="title">
+          <h1>Welcome to the <span class="font__bold">Frontend Quiz</span></h1>
+          <p>Pick a subject and get started</p>
+        </div>
+        <div class="question__container hide__content">
+          <div class="question__number">
+            <p></p>
+          </div>
+          <div class="question__display">
+          <p></p>
+          </div>
+          <div class="question__progress">
+            <div class="progress__bar"></div>
+          </div>
+        </div>
       </header>
 
       <div class="subjects">
@@ -66,20 +82,10 @@
 
       </div>
     </article>
-      <!-- <div class="question__container">
-        <div class="question__number">
-          <p>Question 6 of 10</p>
-        </div>
-        <div class="question__display">
-        <p>
-          Which of theese color contrast ratios defines the minimum
-          wcag 2.1 level aa requirement for normal text?
-        </p>
-        </div>
+      <div class="question__container">
+        
 
-        <div class="question__progress">
-          <div class="progress__bar"></div>
-        </div>
+        
          </div>
        
          <label>
@@ -112,7 +118,7 @@
            </div>
            <p class="answer__choices">4.5:1</p>
          </label>
-         <input type="radio" name="" id=""> -->
+         <input type="radio" name="" id="">
   </main>
 
   
@@ -120,7 +126,7 @@
   
   
 
-  <!-- <script src="./scripts/renderQuiz.js"></script>
-  <script src="./scripts/fetchQuiz.js"></script> -->
+<script src="./scripts/renderQuiz.js"></script>
+<script src="./scripts/fetchQuiz.js"></script>
 </body>
 </html>
