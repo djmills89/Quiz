@@ -65,6 +65,7 @@
     --flavor-text-color: var(--blue-300);
     --answer-option-bg: var(--blue-50);
     --user-select-bg: var(--blue-850);
+    --progress-bar-bgcolor: var(--blue-850);
 }
 
 [data-theme="light"] {
@@ -73,6 +74,7 @@
     --flavor-text-color: var(--grey-500);
     --answer-option-bg: var(--grey-50);
     --user-select-bg: var(--white);
+    --progress-bar-bgcolor: var(--white);
 }
 
 html {
@@ -82,6 +84,7 @@ html {
 body {
     background-color: var(--bg-color);
     font-family: var(--ff-family);
+    transition: background-color 0.3s ease;
 }
 
 article, form {
@@ -102,6 +105,7 @@ header h1 {
     font-size: 4rem;
     font-weight: var(--fw-light);
     color: var(--text-color);
+    transition: color 0.3s ease;
 }
 
 header h1 span {
@@ -114,6 +118,7 @@ header p {
     line-height: var(--lh-loose);
     color: var(--flavor-text-color);
     font-style: italic;
+    transition: color 0.3s ease;
 }
 
 
@@ -138,6 +143,7 @@ header p {
     background-color: var(--user-select-bg);
     cursor: pointer;
     border: 2px solid transparent;
+    transition: background-color 0.3s ease;
 }
 
 .subjects__button:hover {
@@ -156,6 +162,7 @@ header p {
     font-family: var(--ff-family);
     font-size: var(--fs-6);
     font-weight: var(--fw-medium);
+    transition: color 0.3s ease;
 }
 
 .subjects__button img {
@@ -223,6 +230,7 @@ label {
     background-color: var(--user-select-bg);
     margin-block-end: var(--space-300);
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 label:hover {
@@ -248,18 +256,21 @@ input[type="radio"] {
     font-style: italic;
     color: var(--flavor-text-color);
     line-height: var(--lh-loose);
+    transition: color 0.3s ease;
 }
 
 .question__display {
     font-size: var(--fs-5);
     font-weight: var(--fw-medium);
     color: var(--text-color);
+    transition: color 0.3s ease;
 }
 
 .question__container .question__progress {
-    background-color: white;
+    background-color: var(--progress-bar-bgcolor);
     border-radius: 2rem;
     padding: var(--space-50);
+    transition: color 0.3s ease;
 }
 
 .question__container .progress__bar {
@@ -281,10 +292,12 @@ input[type="radio"] {
     font-size: var(--fs-6);
     font-weight: var(--fw-medium);
     border-radius: 0.75rem;
+    transition: background-color 0.3s ease;
 }
 
 .answer__choices {
     color: var(--text-color);
     font-size: var(--fs-6);
     font-weight: var(--fw-medium);
+    transition: color 0.3s ease;
 }
