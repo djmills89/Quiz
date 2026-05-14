@@ -37,3 +37,14 @@ function renderQuiz(quizData) {
 
     console.log(currentQuiz)
 }
+
+const userAnswers = {
+    correct: [1,2,4,6,7,8,9],
+    incorrect: [3,5,10],
+    possible: 10,
+    score() {
+        return this.correct.length / this.possible * 100
+    }
+}
+
+console.log(userAnswers.score())
